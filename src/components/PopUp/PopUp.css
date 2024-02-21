@@ -1,0 +1,112 @@
+.popup-block {
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    padding: 50px 30px;
+    border: 2px solid #161616;
+    background: #FFF;
+    box-shadow: 0 0 40px 0 rgba(22, 22, 22, 0.65);
+    z-index: 99;
+}
+.popup-block>img {
+    max-width: 300px;
+    width: 100%;
+}
+.popup-block>h1 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+.input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    position: relative;
+}
+.popup-block>.input-block>input, textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 60px;
+    padding: 18px;
+    border: 2px solid #161616;
+    background: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3A3A3A;
+}
+.popup-block .input-block input:focus, textarea:focus:not([type="checkbox"]) {
+    transition: 0.1s;
+    outline: 5px solid #000000;
+    outline-offset:3px;
+}
+
+.popup-block>.input-block>textarea:focus {
+}
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 60px;
+    max-height: 200px;
+    height: 100px;
+}
+.popup-block>.input-block>.error {
+    width: 100%;
+    color: #f80b0b;
+}
+.popup-block>input[type="reset"] {
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #161616;
+    background: #ffffff;
+    color: #161616;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: normal;
+}
+.popup-block>input[type="reset"]:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background: #161616;
+    color: #FFF;
+}
+.popup-block>input[type="submit"] {
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #767676;
+    background: #161616;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: normal;
+}
+.popup-block>input[type="submit"]:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.71);
+}
+.popup-block>.input-block>.checkbox-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 10px;
+}
+.popup-block>.input-block>.checkbox-block>input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    accent-color: #161616;;
+}
+.popup-block>.input-block>.checkbox-block>label {
+    color: #000;
+    font-size: 16px;
+}
